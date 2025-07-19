@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>British Airways - My Trips</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://freepngdesign.com/content/uploads/images/p-2839-1-british-airways-logo-png-transparent-logo-730187218491.png">
+</head>
+<body>
+    <!-- Top Utility Nav -->
+    <div class="utility-nav">
+        <div class="container">
+            <div class="utility-nav-left">
+                <a href="#">Executive Club</a>
+                <a href="#">Business</a>
+                <a href="#">Holidays</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="utility-nav-right">
+                <a href="#" class="login-btn"><i class="fas fa-user"></i> Log in / Sign up</a>
+                <div class="language-selector">
+                    <span>EN</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="/"><img src="https://brandslogos.com/wp-content/uploads/images/large/british-airways-logo-1.png" alt="British Airways"></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/">Book</a></li>
+                    <li><a href="/my-trips" class="active">My Trips</a></li>
+                    <li><a href="/travel-information">Travel Information</a></li>
+                    <li><a href="/destinations">Destinations</a></li>
+                    <li><a href="/executive-club">Executive Club</a></li>
+                </ul>
+            </nav>
+            <div class="nav-cta">
+                <a href="#" class="search-btn"><i class="fas fa-search"></i></a>
+                <a href="#" class="menu-btn"><i class="fas fa-bars"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('static/images/my-trips-hero.jpg'); height: 400px;">
+        <div class="container">
+            <div class="booking-container">
+                <div class="booking-tabs">
+                    <button class="active">Manage My Booking</button>
+                    <button>Check In</button>
+                    <button>Flight Status</button>
+                </div>
+                <div class="booking-form">
+                    <div class="booking-row">
+                        <div class="form-group">
+                            <label>Booking Reference</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-ticket-alt"></i>
+                                <input type="text" placeholder="Enter your 6-character booking reference">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-user"></i>
+                                <input type="text" placeholder="Enter your last name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="booking-row">
+                        <div class="form-group">
+                            <button class="search-flights-btn">Retrieve booking</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Trips Content -->
+    <section class="travel-planning" style="padding-top: 40px;">
+        <div class="container">
+            <h2>Manage your journey</h2>
+            <p class="section-intro">Access and modify your bookings, check in for your flights, and get real-time updates on your journey.</p>
+            
+            <div class="planning-cards">
+                <div class="planning-card">
+                    <img src="static/images/check-in.jpg" alt="Check-in">
+                    <h3>Online Check-in</h3>
+                    <p>Check in online from 24 hours up to 1 hour before your flight departs.</p>
+                    <a href="#" class="btn-text">Check in now <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="planning-card">
+                    <img src="static/images/flight-status.jpg" alt="Flight Status">
+                    <h3>Flight Status</h3>
+                    <p>Get the latest information about arrival and departure times.</p>
+                    <a href="#" class="btn-text">Check status <i class="fas fa-chevron-right"></i></a>
+                </div>
+                <div class="planning-card">
+                    <img src="static/images/seat-selection.jpg" alt="Seat Selection">
+                    <h3>Seat Selection</h3>
+                    <p>Choose your preferred seat or change your seating arrangements.</p>
+                    <a href="#" class="btn-text">Select seats <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Options Section -->
+    <section class="experience" style="background-color: #fff;">
+        <div class="container">
+            <h2>Additional booking options</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="experience-icon">
+                        <i class="fas fa-suitcase"></i>
+                    </div>
+                    <h3>Add Baggage</h3>
+                    <p>Purchase additional baggage allowance for your upcoming flight.</p>
+                    <a href="#">Add now</a>
+                </div>
+                <div class="experience-card">
+                    <div class="experience-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Special Meals</h3>
+                    <p>Request special dietary meals for your flight at least 24 hours before departure.</p>
+                    <a href="#">Select meal</a>
+                </div>
+                <div class="experience-card">
+                    <div class="experience-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Add Car Rental</h3>
+                    <p>Book a car with our trusted partners for your destination.</p>
+                    <a href="#">Book now</a>
+                </div>
+                <div class="experience-card">
+                    <div class="experience-icon">
+                        <i class="fas fa-hotel"></i>
+                    </div>
+                    <h3>Add Hotel</h3>
+                    <p>Find the perfect accommodation to complement your journey.</p>
+                    <a href="#">Find hotels</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Changes Section -->
+    <section class="loyalty">
+        <div class="container">
+            <div class="loyalty-content">
+                <h2>Need to change your travel plans?</h2>
+                <p>We understand that plans can change. Modify your booking, request a refund, or find out about our flexible booking policy.</p>
+                <a href="#" class="btn-primary">View options</a>
+            </div>
+            <div class="loyalty-image">
+                <img src="static/images/travel-changes.jpg" alt="Change Travel Plans">
+            </div>
+        </div>
+    </section>
+
+    <!-- Download App Section -->
+    <section class="app-download">
+        <div class="container">
+            <div class="app-content">
+                <h2>Download the British Airways app</h2>
+                <p>Manage your bookings on the go, access your boarding pass offline, and receive real-time flight notifications with our convenient mobile app.</p>
+                <div class="app-buttons">
+                    <a href="#" class="app-button"><img src="static/images/app-store.png" alt="Download on App Store"></a>
+                    <a href="#" class="app-button"><img src="static/images/google-play.png" alt="Get it on Google Play"></a>
+                </div>
+            </div>
+            <div class="app-image">
+                <img src="static/images/ba-app.png" alt="British Airways App">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-sections">
+                <div class="footer-section">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Manage my booking</a></li>
+                        <li><a href="#">Disruption assistance</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>About British Airways</h3>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">IAG Group</a></li>
+                        <li><a href="#">Modern Slavery Statement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Website</h3>
+                    <ul>
+                        <li><a href="#">UK site</a></li>
+                        <li><a href="#">Site map</a></li>
+                        <li><a href="#">Terms & conditions</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Cookie policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="newsletter">
+                        <h3>Subscribe to our newsletter</h3>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Enter your email address">
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 British Airways. All rights reserved.</p>
+                </div>
+                <div class="payment-methods">
+                    <img src="static/images/payment-icons.png" alt="Accepted Payment Methods">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Bot Icon -->
+    <div id="chatbot-icon" class="chatbot-icon">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+
+    <!-- Chat Bot Window -->
+    <div id="chatbot-window" class="chatbot-window hidden">
+        <div class="chatbot-header">
+            <div class="chatbot-logo">
+                <img src="https://brandslogos.com/wp-content/uploads/images/large/british-airways-logo-1.png" alt="British Airways">
+                <span>Virtual Assistant</span>
+            </div>
+            <div class="chatbot-controls">
+                <button id="minimize-chat"><i class="fas fa-minus"></i></button>
+                <button id="close-chat"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+        <div id="chat-container" class="chat-container">
+            <div class="chat-message bot">
+                <div class="message-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="message-content">
+                    <p>Hello! I'm your British Airways virtual assistant. How can I help you manage your booking today?</p>
+                </div>
+            </div>
+            <!-- More messages will be added here dynamically -->
+        </div>
+        <div class="chat-input-container">
+            <div id="attachment-preview" class="attachment-preview hidden">
+                <div class="attachment-info">
+                    <i class="fas fa-file-alt"></i>
+                    <span id="attachment-name"></span>
+                </div>
+                <button id="remove-attachment"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-input-controls">
+                <button id="attachment-button"><i class="fas fa-paperclip"></i></button>
+                <input type="file" id="file-input" class="hidden">
+                <input type="text" id="chat-input" placeholder="Type your message...">
+                <button id="voice-button"><i class="fas fa-microphone"></i></button>
+                <button id="send-button"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Voice Popup -->
+    <div id="voice-popup-overlay" class="voice-popup-overlay hidden"></div>
+    <div id="voice-popup" class="voice-popup hidden">
+        <div class="voice-popup-header">
+            <h3>Voice Input</h3>
+            <button id="close-voice-popup"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="waveform-container">
+            <svg width="100%" height="60" viewBox="0 0 300 60" preserveAspectRatio="none">
+                <path id="waveform-svg-path" d="M0,30 Q25,30 50,30 T100,30 T150,30 T200,30 T250,30 T300,30"></path>
+            </svg>
+            <div id="recording-indicator" class="recording-indicator hidden"></div>
+        </div>
+        <div id="transcription-result" class="transcription-result"></div>
+        <div id="recording-status" class="recording-status">Click the microphone to start recording</div>
+        <div class="voice-controls">
+            <button id="start-recording"><i class="fas fa-microphone"></i></button>
+            <div class="voice-control-group">
+                <button id="pause-recording" disabled><i class="fas fa-pause"></i></button>
+                <button id="resume-recording" disabled><i class="fas fa-play"></i></button>
+                <button id="reset-recording" disabled><i class="fas fa-redo"></i></button>
+            </div>
+            <button id="send-voice" disabled><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>
